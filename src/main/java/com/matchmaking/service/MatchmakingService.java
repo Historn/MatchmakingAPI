@@ -1,26 +1,26 @@
 package com.matchmaking.service;
 
 import com.matchmaking.model.Player;
+import com.matchmaking.repository.PlayerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 // Business logic layer
 // Player Queue handling
-
 @Service
 public class MatchmakingService {
 
-    private List<Player> queue = new ArrayList<>(); // Temporary data saving, data doesnt persist if app closes
+    @Autowired
+    private PlayerRepository repository;
 
     public Player addPlayer(String username, int skill){
         Player player = new Player(username, skill);
-        queue.add(player);
-        return player;
+        return repository.save(player);
     }
 
     public List<Player> getQueue() {
-        return queue;
+        return repository.findAll();
     }
 }
