@@ -21,4 +21,4 @@ jobs:
         java-version: '17'
 
     - name: Build with Maven
-      run: mvn clean install -DskipTests # Skip tests for faster build; remove -DskipTests to run tests
+      run: mvn clean install -DskipTests=true # Skip tests for faster build; remove -DskipTests to run tests
