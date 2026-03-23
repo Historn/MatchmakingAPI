@@ -1,3 +1,5 @@
+![CI](https://github.com/YOUR_USERNAME/MatchmakingAPI/actions/workflows/ci.yml/badge.svg)
+
 # 🎮 Multiplayer Matchmaking API
 
 A backend REST API for a multiplayer matchmaking system, built with Java and Spring Boot.
