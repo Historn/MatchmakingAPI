@@ -1,4 +1,4 @@
-![CI](https://github.com/YOUR_USERNAME/MatchmakingAPI/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Historn/MatchmakingAPI/actions/workflows/ci.yml/badge.svg)
 
 # 🎮 Multiplayer Matchmaking API
 
